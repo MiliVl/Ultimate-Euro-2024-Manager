@@ -1,0 +1,235 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: blue;
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.ball-container {
+  position: absolute;
+  bottom: -80px;
+  left: 45%;
+  transform: translateX(-50%);
+  animation: moveLeftRight 6s infinite linear;
+}
+
+.soccer-ball {
+  width: 65px;
+  height: auto;
+}
+
+@keyframes moveLeftRight {
+  0% {
+    transform: translateX(-150%);
+  }
+  25% {
+    transform: translateX(25%);
+  }
+  50% {
+    transform: translateX(50%);
+  }
+  75% {
+    transform: translateX(75%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.player-list-container {
+  position: fixed; 
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  z-index: 10000; 
+  background: white; 
+  border-radius: 8px; 
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 8px; 
+  padding: 20px; 
+  max-height: 80vh; 
+  overflow-y: auto; 
+  width: 80vw; 
+}
+.player-list-container.goalkeeper-list {
+  position: fixed; 
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%); 
+  background: white;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 8px;
+  padding: 20px;
+  max-height: 70vh;
+  overflow-y: auto;
+  width: 60vw;
+  z-index: 1000; 
+}
+
+.player-list {
+  display: grid; 
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); 
+  gap: 10px; 
+  padding: 0; 
+  list-style: none; 
+  margin: 0; 
+  z-index: 10000; 
+}
+
+
+.player-list-item {
+  margin: 0;
+}
+
+.player-button {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  text-align: left;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.player-button:hover {
+  transform: scale(1.05);
+}
+
+.cancel-button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #f44336;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cancel-button:hover {
+  background-color: #d32f2f;
+}
+
+.football-field {
+  width: 100%;
+  height: 600px;
+  background: green;
+  position: relative;
+  border: 2px solid white;
+  margin: 0 auto; 
+  max-width: 800px; 
+}
+
+.middle-delimiter {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: white;
+  transform: translateY(-50%);
+}
+
+.goalkeeper-position,
+.defender-position,
+.midfielder-position,
+.attacker-position {
+  position: absolute;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+
+.goalkeeper-position {
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+}
+
+.defender-position.d1 {
+  top: 20%;
+  left: 17%;
+  width: 100px;
+}
+.defender-position.d2 {
+  top: 20%;
+  left: 35%;
+  width: 100px;
+}
+.defender-position.d3 {
+  top: 20%;
+  left: 53%;
+  width: 100px;
+}
+.defender-position.d4 {
+  top: 20%;
+  left: 70%;
+  width: 100px;
+}
+
+.midfielder-position.m1 {
+  top: 40%;
+  left: 17%;
+  width: 100px;
+}
+.midfielder-position.m2 {
+  top: 40%;
+  left: 35%;
+  width: 100px;
+}
+.midfielder-position.m3 {
+  top: 40%;
+  left: 53%;
+  width: 100px;
+}
+.midfielder-position.m4 {
+  top: 40%;
+  left: 70%;
+  width: 100px;
+}
+
+.attacker-position.a1 {
+  top: 60%;
+  left: 35%;
+  width: 100px;
+}
+.attacker-position.a2 {
+  top: 60%;
+  left: 53%;
+  width: 100px;
+}
+.goal {
+  position: absolute;
+  width: 150px;
+  height: 40px;
+  background: white;
+  top: 2%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 2px solid black;
+  border-radius: 3px;
+}
+
+
+
+
+
