@@ -1,70 +1,79 @@
-# Getting Started with Create React App
+Romana:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Aceasta aplicatie web a fost dezvoltata cu ajutorul mai multor tehnologii: 
+-javascript
+-CSS
+-HTML
+-node.js 
+-react
 
-## Available Scripts
+Dependencies:
+-baza de date este una locala, integrata in asa fel incat sa poata fi folosita si de pe un alt dispozitiv,
+ in conditiile in care aceasta este adaugata in path-ul: C:\\Fotball-Manager-2024\\backend\\fotball_database.db
+- Node.js
+- npm
+- React(toate Dependencies urile instalate in terminal sunt in package-lock.json)
 
-In the project directory, you can run:
 
-### `npm start`
+Cum se porneste aplicatia:
+-in terminal se scrie comanda: "npm start", iar serverul aplicatiei(de front-end) va fi disponibil 
+la adresa: http://localhost:3000
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Continut:
+-pagina de start unde userul va alege dintre modurile de joc: "User vs Computer" si "Computer vs Computer"
+-In cazul "User vs Computer", userul va fi redirectionat catre o pagina unde acesta va putea sa isi aleaga
+ tara cu care doreste sa joace. Dupa ce tara este aleasa, acesta va fi redirectionat catre pagina unde ii 
+ este prezentata tabla de joc pe care trebuie sa isi aleaga jucatorii. Fiecare jucator dispune de o descriere 
+ care va ajuta playerul sa faca alegerea. Dupa ce toata echipa este formata, userul este redirectionat catre 
+ "knockout stage", unde va putea vedea ce echipa castiga in fiecare runda si statusul echipei alese. Echipa 
+ castigatoare din fiecare runda este aleasa in functie de media echipei in functie de scorul jucatorilor alesi.
+ Restul echipelor sunt formate random si ordinea lor in meciuri este tot random.
+-In cazul "Computer vs Computer" toate echipele sunt formate random si alese intr o ordine random. 
+-Dupa finalizarea meciurilor, butonul de "Proceed to next match" este dezactivat, iar userul se poate
+ intoarce la pagina de start. 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Pentru a vedea baza de date:
+-DB Browser (instalat)
+-drag and drop al fisierului "fotball_database.db" in aplicatia DB Browser
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+----------------------------------------------------------------------------------------------------------------------
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+English:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+This web application has been developed with the help of several technologies: 
+-javascript
+-CSS
+-HTML
+-node.js 
+-react
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Dependencies:
+- the database is a local one, integrated in such a way that it can be used from another device. It should
+be added to the path: C:Fotball-Manager-2024backendfotball_database.db
+- Node.js
+- npm
+- React(all installed Dependencies in terminal are in package-lock.json)
 
-### `npm run eject`
+How to start the app:
+- in the terminal write the command: "npm start" and the application server (front-end) will be available 
+at: http://localhost:3000
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Content:
+- the home page where the user will choose between the game modes: "User vs Computer" and "Computer vs Computer"
+- In the case of "User vs Computer", the user will be redirected to a page where he will be able to choose
+ the country he wants to play with. Once the country is chosen, they will be redirected to the page where they 
+ will have to choose the players for the team. Each player has a description that will help the player make the choice.
+ After the whole team is formed, the user is redirected to knockout stage, where he will be able to see which team
+ wins in each round and the status of the chosen team. The winner of each round is chosen according to the team's 
+ score formed of out of the average score of the chosen players. The rest of the teams are randomly formed and 
+ their order in the matches is also random.
+-In the case of "Computer vs Computer" all teams are randomly formed and chosen in a random order. 
+-After the completion of the matches, the "Proceed to next match" button is deactivated, and the user can
+return to the home page. 
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+To view the database:
+-DB Browser (installed)
+-drag and drop of the "fotball_database.db" file in the DB Browser application
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
